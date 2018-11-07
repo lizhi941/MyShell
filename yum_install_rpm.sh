@@ -19,7 +19,7 @@ fi
 }
 
 check_ok(){
-if [ $? -ne 0]
+if [ $? -ne 0 ]
 then
 	echo -e  "\033[31m "Erro,Check the error log."   \033[0m"
 fi
@@ -32,7 +32,7 @@ fi
 # you can replace the "gcc gcc-c-- vim vi" with #
 # the rpm package name you want to install      #
 #################################################
-requirements = "gcc gcc-c-- vim vi"
+requirements="gcc gcc-c-- vim vi"
 for p in $requirements 
 do yum_install $p
 done
